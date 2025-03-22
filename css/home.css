@@ -1,6 +1,68 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    background-color: aquamarine;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.typing-container {
+  font-weight: bold;
+  /* display: inline-block; */
+  min-width: 280px; /* Adjust according to your longest text */
+  text-align: left;
+  color: orangered;
+}
+
+.cursor {
+  display: inline-block;
+  width: 5px;
+  height: 24px;
+  background: white;
+  margin-left: 5px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+main {
+  /* background-image: url("../assets/images/home-page-bg.jpg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; */
+  height: 100vh;
+  background-color: rgb(11, 11, 11);
+
+  .left {
+    font-size: 15px;
+    color: white;
+
+    .intro {
+      font-size: 30px;
+    }
+
+    .summary {
+      color: green;
+    }
+  }
+}
+
+.poppins-500 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-300 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.my-image {
+  filter: drop-shadow(0 0 5px rgb(135, 6, 221)); 
+  /* border: 3px solid black;  */
+  /* outline: 3px solid red; */
 }
